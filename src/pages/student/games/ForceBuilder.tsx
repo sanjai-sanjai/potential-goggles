@@ -389,15 +389,15 @@ export default function ForceBuilder() {
 
             {/* Result Display */}
             {showResult && (
-              <div className="p-4 rounded-lg bg-gradient-to-r from-blue-100 to-purple-100 border border-blue-300">
+              <div className="p-4 rounded-lg bg-muted border border-border/50">
                 <div className="text-center mb-4">
-                  <div className="text-2xl font-bold text-blue-700 mb-2">
+                  <div className="text-2xl font-bold text-accent mb-2">
                     {lastDistance}px
                   </div>
-                  <div className="text-sm text-gray-700">
+                  <div className="text-sm text-foreground/80">
                     The {object.name.toLowerCase()} traveled {lastDistance}px
                   </div>
-                  <div className="text-xs text-gray-600 mt-2">
+                  <div className="text-xs text-foreground/60 mt-2">
                     Heavier objects moved slower with the same force!
                   </div>
                 </div>
