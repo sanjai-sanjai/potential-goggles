@@ -1,5 +1,6 @@
 import { SubjectLayout } from "@/components/student/SubjectLayout";
 import { GameMissionCard } from "@/components/student/GameMissionCard";
+import { EntrepreneurshipActiveLearning } from "@/components/active-learning/EntrepreneurshipActiveLearning";
 import { Lightbulb, Store, Users, BarChart3, Megaphone, Package } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
