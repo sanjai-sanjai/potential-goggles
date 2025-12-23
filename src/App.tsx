@@ -128,34 +128,34 @@ const App = () => (
                     <PhysicsPage />
                   </ProtectedRoute>
                 } />
-                <Route path="/student/physics/village-power-engineer" element={
+                <Route path="/student/physics/projectile-motion" element={
                   <ProtectedRoute allowedRoles={["student"]}>
-                    <VillagePowerEngineer />
+                    <ProjectileMotion />
                   </ProtectedRoute>
                 } />
-                <Route path="/student/physics/trajectory-lock" element={
+                <Route path="/student/physics/village-physics-explorer" element={
                   <ProtectedRoute allowedRoles={["student"]}>
-                    <TrajectoryLock />
+                    <VillagePhysicsExplorer />
                   </ProtectedRoute>
                 } />
-                <Route path="/student/physics/voltage-trap" element={
+                <Route path="/student/physics/force-builder" element={
                   <ProtectedRoute allowedRoles={["student"]}>
-                    <VoltageTrap />
+                    <ForceBuilder />
                   </ProtectedRoute>
                 } />
-                <Route path="/student/physics/force-balance" element={
+                <Route path="/student/physics/energy-quest" element={
                   <ProtectedRoute allowedRoles={["student"]}>
-                    <ForceBalance />
+                    <EnergyQuest />
                   </ProtectedRoute>
                 } />
-                <Route path="/student/physics/wave-rider" element={
+                <Route path="/student/physics/village-light-up" element={
                   <ProtectedRoute allowedRoles={["student"]}>
-                    <WaveRider />
+                    <VillageLightUp />
                   </ProtectedRoute>
                 } />
-                <Route path="/student/physics/gravity-drop" element={
+                <Route path="/student/physics/logic-blocks-puzzle" element={
                   <ProtectedRoute allowedRoles={["student"]}>
-                    <GravityDrop />
+                    <LogicBlocksPuzzle />
                   </ProtectedRoute>
                 } />
                 <Route path="/student/chemistry" element={
