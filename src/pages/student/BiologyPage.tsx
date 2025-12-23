@@ -143,7 +143,7 @@ export default function BiologyPage() {
             </div>
           ))}
         </div>
-      </div>
-    </SubjectLayout>
-  );
-}
+        </div>
+      </SubjectLayout>
+    );
+  }
