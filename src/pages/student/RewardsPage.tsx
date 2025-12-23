@@ -198,18 +198,18 @@ export default function RewardsPage() {
                 </div>
                 <img
                   loading="lazy"
-                  srcSet="https://cdn.builder.io/api/v1/image/assets%2F5367439bd6874de29cc9e48538762737%2Fb0343b7a8d4c4fe7b7f743644a091374?width=100 100w, https://cdn.builder.io/api/v1/image/assets%2F5367439bd6874de29cc9e48538762737%2Fb0343b7a8d4c4fe7b7f743644a091374?width=200 200w, https://cdn.builder.io/api/v1/image/assets%2F5367439bd6874de29cc9e48538762737%2Fb0343b7a8d4c4fe7b7f743644a091374?width=400 400w, https://cdn.builder.io/api/v1/image/assets%2F5367439bd6874de29cc9e48538762737%2Fb0343b7a8d4c4fe7b7f743644a091374?width=800 800w, https://cdn.builder.io/api/v1/image/assets%2F5367439bd6874de29cc9e48538762737%2Fb0343b7a8d4c4fe7b7f743644a091374?width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2F5367439bd6874de29cc9e48538762737%2Fb0343b7a8d4c4fe7b7f743644a091374?width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2F5367439bd6874de29cc9e48538762737%2Fb0343b7a8d4c4fe7b7f743644a091374?width=2000 2000w, https://cdn.builder.io/api/v1/image/assets%2F5367439bd6874de29cc9e48538762737%2Fb0343b7a8d4c4fe7b7f743644a091374"
+                  srcSet="https://cdn.builder.io/api/v1/image/assets%2Fa9d627de7a0c400a9a5045a9ca4a12ea%2Fbf3bd7389fad4f3289ccdf4eaf5e5789?width=100 100w, https://cdn.builder.io/api/v1/image/assets%2Fa9d627de7a0c400a9a5045a9ca4a12ea%2Fbf3bd7389fad4f3289ccdf4eaf5e5789?width=200 200w, https://cdn.builder.io/api/v1/image/assets%2Fa9d627de7a0c400a9a5045a9ca4a12ea%2Fbf3bd7389fad4f3289ccdf4eaf5e5789?width=400 400w, https://cdn.builder.io/api/v1/image/assets%2Fa9d627de7a0c400a9a5045a9ca4a12ea%2Fbf3bd7389fad4f3289ccdf4eaf5e5789?width=800 800w, https://cdn.builder.io/api/v1/image/assets%2Fa9d627de7a0c400a9a5045a9ca4a12ea%2Fbf3bd7389fad4f3289ccdf4eaf5e5789?width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2Fa9d627de7a0c400a9a5045a9ca4a12ea%2Fbf3bd7389fad4f3289ccdf4eaf5e5789?width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2Fa9d627de7a0c400a9a5045a9ca4a12ea%2Fbf3bd7389fad4f3289ccdf4eaf5e5789?width=2000 2000w, https://cdn.builder.io/api/v1/image/assets%2Fa9d627de7a0c400a9a5045a9ca4a12ea%2Fbf3bd7389fad4f3289ccdf4eaf5e5789"
                   style={{
-                    aspectRatio: "1.31",
-                    objectFit: "cover",
+                    aspectRatio: "1.07",
+                    objectFit: "contain",
                     objectPosition: "center",
                     width: "100%",
-                    marginTop: "20px",
+                    marginLeft: "20px",
                     minHeight: "20px",
                     minWidth: "20px",
                     overflow: "hidden",
                   }}
-                  className="max-sm:max-w-[140px] max-sm:m-0 max-sm:ml-[7px]"
+                  className="max-sm:max-w-[140px] max-sm:m-0 max-sm:ml-[7px] hero-coin-image"
                 />
               </div>
 
