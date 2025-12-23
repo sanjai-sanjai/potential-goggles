@@ -333,28 +333,35 @@ export default function TechnologyDebugDungeon() {
   // Fullscreen mode
   if (isFullscreen) {
     return (
-      <div className="fixed inset-0 z-50 bg-gradient-to-b from-purple-950 via-red-950 to-purple-900">
-        <div className="absolute top-4 right-4 flex gap-2">
+      <div className="fixed inset-0 z-50 bg-gradient-to-b from-purple-950 via-red-950 to-purple-900 flex flex-col">
+        {/* Top Controls - Always visible and accessible */}
+        <div className="absolute top-4 right-4 flex gap-2 z-50">
           <button
             onClick={() => setIsSoundOn(!isSoundOn)}
-            className="bg-white/20 hover:bg-white/30 p-3 rounded-lg text-white"
+            className="bg-white/20 hover:bg-white/30 p-3 rounded-lg text-white transition"
+            title="Toggle sound"
           >
             {isSoundOn ? <Volume2 size={24} /> : <VolumeX size={24} />}
           </button>
           <button
             onClick={() => setIsFullscreen(false)}
-            className="bg-white/20 hover:bg-white/30 p-3 rounded-lg text-white"
+            className="bg-yellow-500 hover:bg-yellow-600 p-3 rounded-lg text-white transition font-bold flex items-center gap-2"
+            title="Minimize (ESC also works)"
           >
             <Minimize2 size={24} />
+            EXIT
           </button>
           <button
             onClick={() => navigate("/student/technology")}
-            className="bg-red-500 hover:bg-red-600 p-3 rounded-lg text-white"
+            className="bg-red-500 hover:bg-red-600 p-3 rounded-lg text-white transition"
+            title="Go back to games"
           >
             <X size={24} />
           </button>
         </div>
-        <div className="w-full h-full flex items-center justify-center">
+
+        {/* Game Content Area */}
+        <div className="flex-1 w-full flex items-center justify-center overflow-hidden">
           {gameContent}
         </div>
       </div>
