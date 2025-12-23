@@ -138,14 +138,16 @@ export function GameContainer({
       <div
         data-game-canvas
         className={`w-full bg-gradient-to-b from-background to-muted/30 rounded-2xl overflow-hidden border border-border/50 ${
-          isExpandedView ? "fixed inset-0 z-50 rounded-none border-0" : ""
+          isExpandedView ? "fixed inset-0 z-50 rounded-none border-0 flex flex-col" : ""
         }`}
       >
-        <div className="relative w-full" style={{ aspectRatio: isExpandedView ? "auto" : "16 / 9" }}>
+        <div className={`relative w-full ${isExpandedView ? "flex-1 overflow-y-auto overflow-x-hidden flex flex-col" : ""}`} style={{ aspectRatio: isExpandedView ? "auto" : "16 / 9" }}>
           {/* Expand/Fullscreen Button - Top Right */}
           <button
             onClick={handleFullscreenClick}
-            className="absolute top-4 right-4 z-50 h-10 w-10 rounded-lg bg-black/50 hover:bg-black/70 flex items-center justify-center text-white transition-colors"
+            className={`absolute top-4 right-4 z-50 h-10 w-10 rounded-lg bg-black/50 hover:bg-black/70 flex items-center justify-center text-white transition-colors ${
+              isExpandedView ? "fixed top-6 right-6" : ""
+            }`}
             title={
               isFullscreen
                 ? "Exit Fullscreen"
@@ -164,15 +166,15 @@ export function GameContainer({
           </button>
 
           {/* Game Component */}
-          <div className={`w-full h-full flex items-center justify-center overflow-hidden ${
-            isExpandedView ? "h-screen" : ""
+          <div className={`w-full flex-1 flex items-start justify-center ${
+            !isExpandedView ? "h-full" : "pt-4"
           }`}>
             {gameComponent}
           </div>
 
           {/* Expanded/Fullscreen Controls */}
           {isInExpandedMode && (
-            <div className="absolute bottom-4 left-4 right-4 z-50 flex gap-2 justify-center flex-wrap">
+            <div className="relative flex gap-2 justify-center flex-wrap p-4 bg-background/80 border-t border-border/50">
               <Button
                 onClick={onRetry}
                 size="sm"
