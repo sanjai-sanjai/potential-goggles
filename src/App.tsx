@@ -330,6 +330,11 @@ const App = () => (
                     <TechnologySubjectPage />
                   </ProtectedRoute>
                 } />
+                <Route path="/learn/technology/active-learning" element={
+                  <ProtectedRoute allowedRoles={["student"]}>
+                    <TechnologyActiveLearningPage />
+                  </ProtectedRoute>
+                } />
                 <Route path="/learn/finance/levels" element={
                   <ProtectedRoute allowedRoles={["student"]}>
                     <FinanceSubjectPage />
