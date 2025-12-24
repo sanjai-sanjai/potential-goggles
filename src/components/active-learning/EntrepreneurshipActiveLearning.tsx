@@ -311,7 +311,7 @@ function DecisionConsequenceBoard() {
           {decisions.map((decision) => (
             <div
               key={decision.id}
-              className="p-3 rounded-lg border border-border bg-white dark:bg-slate-800"
+              className="p-3 rounded-lg border border-border glass-card"
             >
               <div className="text-sm font-semibold mb-2">{decision.title}</div>
               <div className="text-xs text-muted-foreground mb-2 space-y-1">
